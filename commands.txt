@@ -86,13 +86,21 @@ $ git push -u origin test
     
 ======  Merge these changes on Main branch and then push it to your remote main branch.
 
-$ git stash         // stash saves your current stash, but u have to remember it to get it back using $git stash pop.
-Saved working directory and index state WIP on main: ad30662 Adding dev-file and test-file into main branch
-
 $ git checkout -b newBranch
     Switched to a new branch 'newBranch'
 
-$ git add .
-$ git commit -m "deleting the added file at main"
-    [newBranch d0340c6] deleting the added file at main
-    1 file changed, 4 insertions(+)
+$ git add new-branch.txt
+=> new-branch.txt file is created and added to stage
+
+$ git stash         // stash saves your current stash, but u have to remember it to get it back using $git stash pop.
+    Saved working directory and index state WIP on newBranch: 211a34a deleting the added file at main
+
+$ git switch main
+    Switched to branch 'main'
+    Your branch is ahead of 'origin/main' by 4 commits.
+    (use "git push" to publish your local commits)
+
+
+ ====== Create an annotated tag with tagname (v1.7) 
+
+ 
