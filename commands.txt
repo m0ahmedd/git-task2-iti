@@ -89,3 +89,10 @@ $ git push -u origin test
 $ git stash         // stash saves your current stash, but u have to remember it to get it back using $git stash pop.
 Saved working directory and index state WIP on main: ad30662 Adding dev-file and test-file into main branch
 
+$ git checkout -b newBranch
+    Switched to a new branch 'newBranch'
+
+$ git add .
+$ git commit -m "deleting the added file at main"
+    [newBranch d0340c6] deleting the added file at main
+    1 file changed, 4 insertions(+)
