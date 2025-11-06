@@ -32,3 +32,29 @@ $ git push -u origin main
 
 $ git switch -c dev
 Switched to a new branch 'dev'
+
+$ git add .
+$ git commit -m "dev 1st commit"
+    [dev e6d3fe1] dev 1st commit
+    2 files changed, 35 insertions(+)
+    create mode 100644 commands.txt
+    create mode 100644 dev-file.txt
+
+$ git push -u origin dev
+    Enumerating objects: 5, done.
+    Counting objects: 100% (5/5), done.
+    Delta compression using up to 16 threads
+    Compressing objects: 100% (3/3), done.
+    Writing objects: 100% (4/4), 947 bytes | 473.00 KiB/s, done.
+    Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+    remote: 
+    remote: Create a pull request for 'dev' on GitHub by visiting:
+    remote:      https://github.com/m0ahmedd/git-task2-iti/pull/new/dev
+    remote:
+    To github.com:m0ahmedd/git-task2-iti.git
+    * [new branch]      dev -> dev
+    branch 'dev' set up to track 'origin/dev'.
+
+$ git checkout -b test
+    Switched to a new branch 'test'
+
