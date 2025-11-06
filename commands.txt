@@ -1,3 +1,4 @@
+====== Create a new project on your local machine, then push it your remote repo.
 $ git init
     Initialized empty Git repository in E:/courses/web dev/iti-saraya/iti/angela-udemy/CSS/.git/
 
@@ -30,6 +31,8 @@ $ git push -u origin main
     * [new branch]      main -> main
     branch 'main' set up to track 'origin/main'.
 
+====== Create two branches (dev & test) then create one file on each branch, and push this changes to the remote repo.
+
 $ git switch -c dev
 Switched to a new branch 'dev'
 
@@ -58,3 +61,27 @@ $ git push -u origin dev
 $ git checkout -b test
     Switched to a new branch 'test'
 
+$ git add .
+$ git commit -m "test 1st commit"
+    [test 4b23879] test 1st commit
+    3 files changed, 28 insertions(+), 2 deletions(-)
+    delete mode 100644 dev-file.txt
+    create mode 100644 test-file.txt
+
+$ git push -u origin test
+    Enumerating objects: 6, done.
+    Counting objects: 100% (6/6), done.
+    Delta compression using up to 16 threads
+    Compressing objects: 100% (3/3), done.
+    Writing objects: 100% (4/4), 783 bytes | 391.00 KiB/s, done.
+    Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+    remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+    remote: 
+    remote: Create a pull request for 'test' on GitHub by visiting:
+    remote:      https://github.com/m0ahmedd/git-task2-iti/pull/new/test
+    remote:
+    To github.com:m0ahmedd/git-task2-iti.git
+    * [new branch]      test -> test
+    branch 'test' set up to track 'origin/test'.
+    
+======  Merge these changes on Main branch and then push it to your remote main branch.
