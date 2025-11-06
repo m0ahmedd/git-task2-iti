@@ -85,3 +85,7 @@ $ git push -u origin test
     branch 'test' set up to track 'origin/test'.
     
 ======  Merge these changes on Main branch and then push it to your remote main branch.
+
+$ git stash         // stash saves your current stash, but u have to remember it to get it back using $git stash pop.
+Saved working directory and index state WIP on main: ad30662 Adding dev-file and test-file into main branch
+
