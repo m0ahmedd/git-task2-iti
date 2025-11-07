@@ -1,4 +1,7 @@
-====== Create a new project on your local machine, then push it your remote repo.
+### 📄 Contents of `commands.txt`
+
+#### Create a new project on your local machine, then push it your remote repo.
+<pre>
 $ git init
     Initialized empty Git repository in E:/courses/web dev/iti-saraya/iti/angela-udemy/CSS/.git/
 
@@ -30,9 +33,10 @@ $ git push -u origin main
     To github.com:m0ahmedd/git-task2-iti.git
     * [new branch]      main -> main
     branch 'main' set up to track 'origin/main'.
+</pre>
 
-====== Create two branches (dev & test) then create one file on each branch, and push this changes to the remote repo.
-
+#### Create two branches (dev & test) then create one file on each branch, and push this changes to the remote repo.
+<pre>
 $ git switch -c dev
 Switched to a new branch 'dev'
 
@@ -83,9 +87,11 @@ $ git push -u origin test
     To github.com:m0ahmedd/git-task2-iti.git
     * [new branch]      test -> test
     branch 'test' set up to track 'origin/test'.
+</pre>
     
-======  Merge these changes on Main branch and then push it to your remote main branch.
+####  Merge these changes on Main branch and then push it to your remote main branch.
 
+<pre>
 $ git checkout -b newBranch
     Switched to a new branch 'newBranch'
 
@@ -99,20 +105,21 @@ $ git switch main
     Switched to branch 'main'
     Your branch is ahead of 'origin/main' by 4 commits.
     (use "git push" to publish your local commits)
+</pre>
 
-
- ====== Create an annotated tag with tagname (v1.7) 
-
+ #### Create an annotated tag with tagname (v1.7)
+ 
+<pre>
 $ git add .
 $ git commit -m "3rd commit"
     [main 822f4f7] 3rd commit
     1 file changed, 15 insertions(+), 7 deletions(-)
 
 $ git tag -a v1.7 -m "version 1.7"
+</pre>
 
-
-======  Push it to the remote repository
-
+####  Push it to the remote repository
+<pre>
 $ git push origin v1.7
     Enumerating objects: 16, done.
     Counting objects: 100% (16/16), done.
@@ -123,21 +130,26 @@ $ git push origin v1.7
     remote: Resolving deltas: 100% (10/10), completed with 2 local objects.
     To github.com:m0ahmedd/git-task2-iti.git
     * [new tag]         v1.7 -> v1.7
+</pre>
 
+#### Tell me how to list tags.
 
-====== Tell me how to list tags.
-
+<pre>
 $ git tag
     v1.7
+</pre>
 
-
-=====  Tell me how to delete tag locally and remotely.
-
+#### Tell me how to delete tag locally and remotely.
+<pre>
 $ git tag -d v1.7
     Deleted tag 'v1.7' (was aa7b2af)
 
 $ git push origin --delete v1.7
     To github.com:m0ahmedd/git-task2-iti.git
     - [deleted]         v1.7
+</pre>
 
-======  Add an image in the README.md file.
+
+
+# Employee DB Normalization
+![db-emp-normalization](images/db-normalization.png)
